@@ -28,7 +28,7 @@ function handleclickbtn(target) {
   updatePurchaseButton()
   const gettingapplyBtn = document.getElementById('apply');
 
-  // Function to update the Apply button's state
+  
   function updateApplyButton() {
       if (total <= 200 ) {
           gettingapplyBtn.setAttribute('disabled', 'true');
@@ -59,7 +59,15 @@ function getting() {
     const savedAmount = (parseFloat(total.toFixed(2)) - parseFloat(ulitmatetotal.toFixed(2))).toFixed(2);
     moneysave.innerText = savedAmount;
 }
-
+function gethomebtn(){
+    document.getElementById('total').innerHTML=''
+    document.getElementById('selecteditem').innerHTML=''
+    document.getElementById('savemoney').innerHTML=''
+    document.getElementById('discount').innerHTML=''
+    document.getElementById('input').value = ''
+    document.getElementById('apply').setAttribute('disabled', 'disabled');
+    document.getElementById('Purchase').setAttribute('disabled', 'disabled');
+}
 
  
 
