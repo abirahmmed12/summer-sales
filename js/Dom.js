@@ -9,7 +9,7 @@ function handleclickbtn(target) {
     const getSelectedItem = document.getElementById('selecteditem');
     const orderedList = document.getElementById('orderedList');
 
-    getSelectedItem.innerText = productName;
+    
     const li = document.createElement('li');
     li.innerText = counter + '. ' + productName;
     orderedList.appendChild(li);
