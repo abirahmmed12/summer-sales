@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Summer Sale</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/Dom.js "></script>
+    <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
     
 </head>
 
@@ -71,7 +72,7 @@
                 </div>
                 <div onclick="handleclickbtn(this)"> 
 
-                    <div class="card lg:mb-0 mb-7 shadow-xl bg-white">
+                    <div class="card lg:mb-0 mb-7 lg:shadow-xl bg-white">
                         <figure class="bg-[#1111110D] w-48 h-32 rounded-none m-auto"><img
                                 src="./images/prod3.png" alt="Shoes" /></figure>
                                 <div class="rating m-auto mt-2">
@@ -134,7 +135,7 @@
                     </div>
                     <div onclick="handleclickbtn(this)">
 
-                        <div class="card lg:mb-0 mb-7 shadow-xl bg-white">
+                        <div class="card lg:mb-0 mb-7 lg:shadow-xl bg-white">
                             <figure class="bg-[#1111110D] w-48 h-32 rounded-none m-auto"><img
                                     src="./images/prod6.png" alt="Shoes" /></figure>
                                     <div class="rating m-auto mt-2">
@@ -198,7 +199,7 @@
                     </div>
                     <div onclick="handleclickbtn(this)">
 
-                        <div class="card  shadow-xl bg-white">
+                        <div class="card  lg:shadow-xl bg-white">
                             <figure class="bg-[#1111110D] w-48 h-32  rounded-none  m-auto"><img
                                     src="./images/prod9.png" alt="Shoes" /></figure>
                                     <div class="rating m-auto mt-2">
@@ -220,28 +221,30 @@
 
         </div>
         <div class=" h-40 mt-12 text-center ">
-            <h1 class="mb-3 font-semibold">Have coupon? </h1>
-            <input class="border-2 h-12" type="text" name="" id="input" placeholder="Coupon code">
-            <button onclick="getting()" id="apply" class=" hover:bg-pink-400 text-white font-bold py-2 px-4 rounded disabled:opacity-40 disabled:cursor-not-allowed  btn btn-secondary" disabled>Apply</button>
-            <div class=" shadow-lg h-[420px] mt-12 p-10  ">
+            <h1 class="mb-3 text-center font-semibold">Have coupon? </h1>
+            <input class=" border-2 h-12" type="text" name="" id="input" placeholder="Coupon code">
+            <button onclick="getting()" id="apply" class="text-center hover:bg-pink-400 text-white font-bold py-2 px-4 rounded disabled:bg-opacity-50 disabled:text-white disabled:cursor-not-allowed  btn btn-secondary" disabled>Apply</button>
+            <div class=" shadow-lg  mt-12 p-10  ">
 
                 <h1 class="font-semibold mt-2" id="selecteditem"></h1>
+                <ol id="orderedList"></ol>
+            
                 
-               <hr class="">
+               <hr>
                <div class="mt-5">
-                <h1 class="font-semibold">Total Price : <Span id="total"></Span> TK</h1>
-               <h1 class="font-semibold">Discount :<Span id="savemoney"></Span>TK</h1>
-               <h1 class="font-semibold" >Total :<span id="discount"></span>TK</h1>
+                <h1 class="font-semibold md:text-start">Total Price : <Span id="total"> 00</Span>TK</h1>
+               <h1 class="md:text-start font-semibold">Discount :<Span id="savemoney"> 00</Span>TK</h1>
+               <h1 class="md:text-start font-semibold" >Total :<span id="discount"> 00</span>TK</h1>
                </div>
-               
-               <button onclick="my_modal_4.showModal()" id="Purchase" class=" mt-10 w-full bg-[#E527B2] hover:bg-pink-400 text-white font-bold py-2 px-4 rounded disabled:opacity-30 disabled:cursor-not-allowed" disabled>Make Purchase</button>
+            
+               <button onclick="my_modal_4.showModal()" id="Purchase" class=" hover:bg-pink-400 w-full text-white font-bold py-2 px-4 rounded disabled:bg-opacity-50  disabled:text-white disabled:cursor-not-allowed btn btn-secondary relative top-14" disabled>Make Purchase</button>
                <dialog id="my_modal_4" class="modal md:w-[500px] w-[300px]  m-auto">
                 <form method="dialog" class="modal-box w-11/12 max-w-5xl">
                     <img class="m-auto" src="./images/congo.png" alt="">
                   <h3 class="font-bold md:text-4xl text-center">Congratulations</h3>
                   <p class="py-4 text-center">Your Purchase the product</p>
                   <div class="modal-action">
-                    <!-- if there is a button, it will close the modal -->
+                    
                     <button onclick="gethomebtn()" id="HomeButton" class=" m-auto btn btn-secondary"> Go Home</button>
                   </div>
                 </form>
