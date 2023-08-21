@@ -57,6 +57,7 @@ function getting() {
 function gethomebtn() {
     document.getElementById('total').innerHTML = ''
     document.getElementById('selecteditem').innerHTML = ''
+    document.getElementById('orderedList').innerText=''
     document.getElementById('savemoney').innerHTML = ''
     document.getElementById('discount').innerHTML = ''
     document.getElementById('input').value = ''
